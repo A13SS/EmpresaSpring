@@ -11,8 +11,8 @@ public class Nomina {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false, precision = 10, scale = 2)
-    private double sueldo;
+    @Column(nullable = false)
+    private Double sueldo;
 
     @Column(name = "fecha_calculo")
     private LocalDate fechaCalculo;

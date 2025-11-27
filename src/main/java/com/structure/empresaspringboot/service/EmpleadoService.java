@@ -29,7 +29,7 @@ public class EmpleadoService {
 
         return switch (campo.toLowerCase()) {
             case "dni" -> empleadoRepo.findByDni(valor);
-            case "nombre" -> empleadoRepo.findByNombreContainingIgnoreCase(valor);
+            case "nombre" -> empleadoRepo.findByNombreIgnoreCase(valor);
             case "sexo" -> {
                 char s = valor.charAt(0);
                 yield empleadoRepo.findBySexo(s);

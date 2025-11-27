@@ -27,11 +27,11 @@
 
     <hr>
 
-    <c:if test="${not empty empleado}">
+    <c:if test="${not empty nombre}">
         <h3>Empleado:</h3>
         <p><strong>Nombre:</strong> <c:out value="${nombre}" /></p>
         <p><strong>DNI:</strong> <c:out value="${dni}" /></p>
-        <p><strong>Salario:</strong> <c:out value="${empleado.sueldo_calculado}" /> $</p>
+        <p><strong>Salario:</strong> <c:out value="${sueldo_calculado}" /> $</p>
     </c:if>
 
     <c:if test="${not empty error}">
@@ -40,7 +40,7 @@
 
     <br>
 
-    <button type="button" onclick="window.location.href='${pageContext.request.contextPath}/index.jsp'">Volver al menú Principal</button>
+    <button type="button" onclick="window.location.href='${pageContext.request.contextPath}/'">Volver al menú Principal</button>
 
 </div>
 </body>

@@ -53,7 +53,7 @@
         </c:forEach>
         </tbody>
     </table>
-    <button type="button" onclick="window.location.href='${pageContext.request.contextPath}/index.jsp'">Volver al menú Principal</button>
+    <button type="button" onclick="window.location.href='${pageContext.request.contextPath}/'">Volver al menú Principal</button>
 </div>
 </body>
 </html>
