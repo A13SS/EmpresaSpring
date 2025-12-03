@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public interface EmpleadoRepository extends JpaRepository<Empleado, Integer> {
     List<Empleado> findByDni(String dni);
-    List<Empleado> findByNombreIgnoreCase(String nombre);
+    List<Empleado> findByNombreContainingIgnoreCase(String nombre);
     List<Empleado> findBySexo(Character sexo);
     List<Empleado> findByCategoria(Integer categoria);
     List<Empleado> findByAnyos(Integer anyos);

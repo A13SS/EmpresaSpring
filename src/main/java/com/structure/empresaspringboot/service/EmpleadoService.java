@@ -29,9 +29,10 @@ public class EmpleadoService {
 
         return switch (campo.toLowerCase()) {
             case "dni" -> empleadoRepo.findByDni(valor);
-            case "nombre" -> empleadoRepo.findByNombreIgnoreCase(valor);
+            case "nombre" -> empleadoRepo.findByNombreContainingIgnoreCase(valor);
             case "sexo" -> {
                 char s = valor.charAt(0);
+                //Devuelve el valor dentro de dentro de un bloque{}
                 yield empleadoRepo.findBySexo(s);
             }
             case "categoria" -> {
